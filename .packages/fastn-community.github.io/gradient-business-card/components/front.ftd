@@ -1,0 +1,109 @@
+-- import: fastn-community.github.io/gradient-business-card/components/lib
+
+
+-- component front:
+caption name:
+string title:
+string company-name:
+ftd.image-src logo:
+optional string contact-1:
+optional string contact-2:
+optional string email:
+optional string website:
+optional string address:
+
+-- ftd.column:
+width.fixed.px: 700
+height.fixed.px: 350
+background.linear-gradient: $lib.lg 
+spacing: space-between
+padding.px: 32
+color: #FFFFFF
+
+-- ftd.row:
+role: $inherited.types.heading-large
+width: fill-container
+spacing: space-between
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.text: Hi i'm
+style: semi-bold
+
+-- ftd.text: $front.name
+style: semi-bold
+
+-- ftd.text: $front.title
+style: semi-bold
+role: $inherited.types.label-large
+
+-- end: ftd.column
+
+-- ftd.image:
+src: $front.logo
+width.fixed.px: 80
+
+-- end: ftd.row
+
+-- ftd.row:
+width: fill-container
+spacing: space-between
+role: $lib.card-body-font
+
+-- ftd.text: $front.address
+if: { front.email != NULL }
+width.fixed.percent: 40
+
+-- vertical-line:
+if: { front.email != NULL ||  front.website != NULL }
+
+-- ftd.column:
+
+-- ftd.text: $front.email
+if: { front.email != NULL }
+
+-- ftd.text: $front.website
+if: { front.website != NULL }
+
+-- end: ftd.column
+
+-- vertical-line:
+if: { front.contact-1 != NULL || front.contact-2 != NULL }
+
+-- ftd.column:
+
+-- ftd.text: $front.contact-1
+if: { front.contact-1 != NULL }
+
+-- ftd.text: $front.contact-2
+if: { front.contact-2 != NULL }
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: front
+
+
+
+
+
+
+
+
+
+
+
+-- component vertical-line:
+
+-- ftd.column:
+width.fixed.px: 1
+height: fill-container
+background.solid: #FFFFFF
+
+-- end: ftd.column
+
+-- end: vertical-line

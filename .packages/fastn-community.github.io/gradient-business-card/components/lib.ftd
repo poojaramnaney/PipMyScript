@@ -1,0 +1,34 @@
+-- import: fastn-community.github.io/inter-font/assets as inter-assets
+
+-- ftd.linear-gradient lg: 
+direction: right
+colors: $color-values 
+
+-- ftd.linear-gradient-color list color-values:
+
+-- ftd.linear-gradient-color: #EF8435
+stop-position.percent: 22.15
+
+-- ftd.linear-gradient-color: #C9476D
+
+-- ftd.linear-gradient-color: #122E8F
+
+-- end: color-values
+
+
+
+-- ftd.type name-font-type:
+letter-spacing.px: 0
+weight: 800
+font-family: $inter-assets.fonts.Inter
+
+-- ftd.responsive-type name-font: $name-font-type
+
+-- ftd.type card-body-font-type:
+line-height.px: 20
+size.px: 14
+letter-spacing.px: 0
+weight: 400
+font-family: $inter-assets.fonts.Inter
+
+-- ftd.responsive-type card-body-font: $card-body-font-type

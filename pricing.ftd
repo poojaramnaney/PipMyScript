@@ -1,0 +1,54 @@
+-- import: theme/pricing
+
+-- ws.page:
+-- pricing.pricing: Our payment services worldwide
+
+We believe in recognizing the value of your expertise 
+and the importance of your contributions. With our transparent 
+and competitive payment structure, we ensure that your efforts are 
+not only acknowledged but also rewarded appropriately.
+
+-- pricing.pricing-card: Basic Plan
+active: false 
+price: 100
+currency: Rs.
+subscription: monthly
+feature-list: $pricing.free-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: For startups
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- pricing.pricing-card: Standard Plan
+active: true 
+price: 190
+currency: Rs.
+subscription: monthly
+feature-list: $pricing.startup-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: For startups
+tag: Best Plan
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- pricing.pricing-card: Premium Plan
+active: false 
+price: 350
+currency: Rs.
+subscription: monthly
+feature-list: $pricing.enterprise-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: For startups
+
+Lorem ipsum dolor sit amet, consectet adipiscing elit. Suspendisse varius enim 
+in eros elementum tristique.
+
+-- end: pricing.pricing
+
+
+-- end: ws.page

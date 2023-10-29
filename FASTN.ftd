@@ -1,0 +1,48 @@
+-- import: fastn
+
+-- fastn.package: acme.fastn.com
+
+-- fastn.dependency: fastn-community.github.io/midnight-rush as theme
+-- fastn.dependency: fastn-community.github.io/site-doc
+-- fastn.dependency: fastnui.trizwit.com
+-- fastn.dependency: fastn-community.github.io/typography
+-- fastn.dependency: fastn-community.github.io/code-block
+-- fastn.dependency: fastn-community.github.io/button
+-- fastn.dependency: fastn-community.github.io/midnight-rush-cs as cs
+-- fastn.dependency: fastn-community.github.io/midnight-rush-typography as typo
+-- fastn.dependency: saurabh-lohiya.github.io/hero
+-- fastn.dependency: fastn-community.github.io/gradient-business-card
+-- fastn.auto-import: poojaramnaney.github.io/fastn/assets
+-- fastn.auto-import: poojaramnaney.github.io/fastn/chat
+-- fastn.auto-import: theme
+-- fastn.auto-import: theme/common
+-- fastn.auto-import: acme.fastn.com/FASTN/ws
+-- fastn.auto-import: acme.fastn.com/assets
+
+-- fastn.sitemap:
+
+
+
+# Home: index.html
+# Our Services: /services/
+# About Us: /team/
+# Pricing: /pricing/
+;; # Blog: /blog/
+# Chat: /chat/
+
+
+  
+# User Manual: /user-manual/
+  skip: true
+
+- Overview: /user-manual/
+- Create a landing page: /user-manual/create/
+- Add landing page to your existing site: /user-manual/integrate/
+- Header: /user-manual/header/
+  - Site Name: /user-manual/header/#site-name
+  - Logo: /user-manual/header/#site-logo
+  - Logo Height and Width: /user-manual/header/#height-width
+  - Navbar: /user-manual/header/#navbar
+
+
+-- fastn.redirects:

@@ -1,0 +1,32 @@
+-- import: fastn
+
+-- fastn.package: saurabh-lohiya.github.io/hero
+favicon: /-/saurabh-lohiya.github.io/hero/favicon.ico
+
+-- fastn.dependency: fastn-community.github.io/doc-site as doc-site
+-- fastn.dependency: fastn-community.github.io/site-doc
+-- fastn.dependency: fastn-community.github.io/code-block as cb
+-- fastn.dependency: fastn-community.github.io/footer
+-- fastn.dependency: fastn-community.github.io/roboto-typography
+
+-- fastn.auto-import: saurabh-lohiya.github.io/hero/FASTN/ds
+-- fastn.auto-import: saurabh-lohiya.github.io/hero/assets
+-- fastn.auto-import: saurabh-lohiya.github.io/hero/common
+-- fastn.auto-import: fastn-community.github.io/site-doc
+-- fastn.auto-import: doc-site
+-- fastn.auto-import: cb
+
+-- fastn.sitemap:
+
+# Home: index.html
+- Overview: index.html
+- Hero Right Hug: /docs/hero-right-hug/
+- Hero Right Hug Large: /docs/hero-right-hug-large/
+- Hero Right Hug Search: /docs/hero-right-hug-search/
+- Hero Left Hug Expanded: /docs/hero-left-hug-expanded/
+- Hero Right Hug Expanded: /docs/hero-right-hug-expanded/
+- Hero With Search Bar With Label: /docs/hero-right-hug-search-label/
+- Hero Bottom Hug: /docs/hero-bottom-hug/
+- Hero Bottom Hug Search: /docs/hero-bottom-hug-search/
+- Hero Right Hug Expanded Search: /docs/hero-right-hug-expanded-search/
+- Hero Left Hug Expanded Search: /docs/hero-left-hug-expanded-search/

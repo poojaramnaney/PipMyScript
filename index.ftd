@@ -1,0 +1,517 @@
+
+-- import: theme/team
+-- import: fastnui.trizwit.com/UI-Components/Blog/blog-7
+-- import: fastn-community.github.io/button
+-- import: theme/pricing
+-- import: fastnui.trizwit.com/UI-Components/Hero/hero-1
+-- ws.page:
+;; -- component page-desktop:
+;; common.social list social-list:
+;; optional boolean $show-menu:
+;; pr.toc-item list sections:
+;; ftd.background-image bg-img:
+;; children wrapper:
+
+;; -- ftd.row:
+;; background.image: $page-desktop.bg-img
+;; width: fill-container
+;; height: fill-container
+;; padding-vertical.px: 36
+;; padding-horizontal.px: 36
+
+;; -- ftd.background-image bg-img: 
+;; src: $assets.files.assets.a1.jpg
+;; repeat: no-repeat
+;; size: $bg-size
+
+;; -- ws.hero-with-image: We transform ideas into digital outcomes.
+;; cta-primary: Learn More
+;; cta-primary-link: chat
+;; image: $assets.files.assets.landing.png
+;; ;; repeat: $no-repeat
+;; ;; size: $bg-size
+
+
+;; We are an award-winning strategic design company that provides consultancy
+;; services and help you create outstanding digital products.
+;; -- ftd.image: 
+;; src: $assets.files.assets.eduhero.png
+;; width.fixed.px: 1400
+;; height.fixed.px: 400
+;; -- end: ftd.image
+
+;; fit: cover 
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+
+-- ftd.row:
+width.fixed.px: 5000
+height.fixed.px: 970
+margin-left.px: 55
+padding-left.px: 100
+border-radius.px: 20
+background.image: $assets.files.assets.eduhero.png
+align-content: center
+-- ws.content: Embrace the future of Learning
+id: get started
+
+A simple yet modern solution to Change your boring textbooks into exciting videos
+
+;; -- button.button: SECONDARY
+;; role: button
+;; large: true
+;; link: www.google.com
+
+;; -- end: button.button
+-- ftd.row:
+margin-top.px: 50
+margin-right.px: 200
+-- button.button: Get Started
+role: primary
+extra-large: true
+link: chat
+
+;; -- ftd.text: Home
+;; text-align: center
+;; margin-vertical.px: 10
+;; margin-horizontal.px: 28
+;; color: #f2f2f2
+;; link: https://www.google.com
+;; -- ftd.text: About
+;; text-align: center
+;; margin-vertical.px: 10
+;; margin-horizontal.px: 28
+;; color: #f2f2f2
+;; link: https://www.google.com
+;; -- end: ftd.text
+-- end: ftd.row
+-- end: ftd.row
+-- end: ftd.row
+
+
+-- ftd.row:
+width: fill-container
+height: hug-content
+margin-bottom.px: 50
+margin-top.px: 50
+background.solid: #f5f5f5
+;; bg-color: #f5f5f5
+padding-top.px: 25
+padding-horizontal.px: 100
+-- ftd.column:
+-- ftd.image:
+src: $assets.files.assets.contact.png
+margin-top.px: 50
+width.fixed.px: 250
+margin-horizontal.px: 80
+-- end: ftd.image
+-- ftd.text: Login to save your Videos that you generated
+text-align: center
+margin-vertical.px: 10
+margin-horizontal.px: 120
+-- end: ftd.text
+-- end: ftd.column
+
+-- ftd.column:
+-- ftd.image:
+src: $assets.files.assets.learn.png
+margin-top.px: 50
+width.fixed.px: 250
+margin-horizontal.px: 80
+-- end: ftd.image
+-- ftd.text: Upload the Text you want to learn about
+text-align: center
+margin-vertical.px: 10
+margin-horizontal.px: 120
+-- end: ftd.text
+-- end: ftd.column
+
+-- ftd.column:
+-- ftd.image:
+src: $assets.files.assets.video.png
+margin-top.px: 50
+margin-horizontal.px: 80
+width.fixed.px: 250
+-- end: ftd.image
+-- ftd.text: Convert to an interactove video and enjoy!
+text-align: center
+margin-vertical.px: 10
+margin-horizontal.px: 120
+-- end: ftd.text
+-- end: ftd.column
+
+-- end: ftd.row
+
+
+-- pricing.pricing: Convert your Text File into Videos with an Easy Click
+
+Quickly transform the text into captivating videos with unparalleled 
+convenience. Our one-click solution empowers you to convert your words 
+into visually stunning content effortlessly. Say goodbye to complexity and 
+hello to the simplicity of text-to-video magic at your fingertips.
+-- ftd.row:
+width: fill-container
+height: hug-content
+-- ftd.row:
+border-color: #231656
+padding-vertical.px: 200
+padding-horizontal.px: 400
+border-width.px: 10
+border-radius.px: 20
+;; background.solid: #D9D9D9
+background.image: $assets.files.assets.uploagbg.png
+width.fixed.px: 800
+height.fixed.px: 100
+
+-- ftd.row:
+margin-left.px: -70
+align-content: left
+-- ftd.text-input:
+type: file
+width.fixed.px: 800
+height.fixed.px: 100
+;; border-width.px: 10
+;; border-color: #231656
+;; background.solid: #D9D9D9
+border-radius.px: 4
+-- end: ftd.text-input
+
+-- end: ftd.row
+-- end: ftd.row
+-- ftd.column:
+margin-horizontal.px: 100
+align-content: center
+padding-vertical.px: 210
+padding-horizontal.px: 100
+-- ftd.text: Generate a video from your text
+text-align: center
+-- button.button: Generate
+role: primary
+extra-large: true
+link: chat
+
+-- end: ftd.column
+
+-- end: ftd.row
+;; -- ws.hero-image-left:  Generate
+;; image: $assets.files.assets.left-img1.jpg
+
+;; Welcome Studio gives you all the tools you need to create and host virtual
+;; experiences that look awesome and put your brand centerstage.
+
+
+;; -- ws.faqs: Frequently Asked Questions
+
+
+;; Flex is the only saas business platform that lets you run your business on one
+;; platform, seamlessly across all digital channels.
+
+-- pricing.pricing: Why it is Worth Choosing PipMyScript
+
+Choosing Pip My Script is a decision driven by expertise and 
+excellence. Our team of seasoned professionals ensures your script 
+is transformed into a masterpiece. With a track record of exceptional results and a commitment to your creative vision, we're the go-to choice for script enhancement.
+
+
+
+-- ftd.row:
+width: fill-container
+margin-horizontal.px: 15
+-- ftd.column:
+border-color: #231656
+border-width.px: 3
+border-radius.px: 20
+width.fixed.px: 368
+height.fixed.px: 300
+margin-horizontal.px: 50
+
+-- ftd.row:
+background.image: $assets.files.assets.safe.png
+border-radius.px: 20
+margin.px: 10
+width.fixed.px: 330
+height.fixed.px: 148
+
+
+-- ftd.row:
+-- ftd.text: Easily integrate with all your need favorite tools through and APIsing including automatic 
+width.fixed.px: 348
+height.fixed.px: 148
+margin-vertical.px: 180
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+border-color: #231656
+border-width.px: 3
+border-radius.px: 20
+width.fixed.px: 368
+height.fixed.px: 300
+margin-horizontal.px: 50
+
+-- ftd.row:
+background.image: $assets.files.assets.login.png
+border-radius.px: 20
+margin.px: 10
+width.fixed.px: 330
+height.fixed.px: 148
+
+
+-- ftd.row:
+-- ftd.text: Easy Login to save all your videos at one place. No need to re-uploading the documents again and again.
+width.fixed.px: 348
+height.fixed.px: 148
+margin-vertical.px: 180
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- ftd.column:
+border-color: #231656
+border-width.px: 3
+border-radius.px: 20
+width.fixed.px: 368
+height.fixed.px: 300
+margin-horizontal.px: 50
+
+-- ftd.row:
+background.image: $assets.files.assets.merchant.png
+border-radius.px: 20
+margin.px: 10
+width.fixed.px: 330
+height.fixed.px: 148
+
+
+-- ftd.row:
+-- ftd.text: Generate upto 100 videos with 200+ pages PDF easily. Unlock your maximum potential.
+width.fixed.px: 348
+height.fixed.px: 148
+margin-vertical.px: 180
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+
+
+
+-- ftd.row:
+width: fill-container
+margin-horizontal.px: 15
+margin-vertical.px: 150
+-- ftd.column:
+border-color: #231656
+border-width.px: 3
+border-radius.px: 20
+width.fixed.px: 368
+height.fixed.px: 300
+margin-horizontal.px: 50
+
+-- ftd.row:
+background.image: $assets.files.assets.learning.png
+border-radius.px: 20
+margin.px: 10
+width.fixed.px: 330
+height.fixed.px: 148
+
+
+-- ftd.row:
+-- ftd.text: It’s helps you to learn concept through simply typing the required topic with few details.
+width.fixed.px: 348
+height.fixed.px: 148
+margin-vertical.px: 180
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+border-color: #231656
+border-width.px: 3
+border-radius.px: 20
+width.fixed.px: 368
+height.fixed.px: 300
+margin-horizontal.px: 50
+
+-- ftd.row:
+background.image: $assets.files.assets.easy.png
+border-radius.px: 20
+margin.px: 10
+width.fixed.px: 330
+height.fixed.px: 148
+
+
+-- ftd.row:
+-- ftd.text: With out special feature of converting texts to videos, it is easier for you to understand and remember the concept better.
+width.fixed.px: 348
+height.fixed.px: 148
+margin-vertical.px: 180
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- ftd.column:
+border-color: #231656
+border-width.px: 3
+border-radius.px: 20
+width.fixed.px: 368
+height.fixed.px: 300
+margin-horizontal.px: 50
+
+-- ftd.row:
+background.image: $assets.files.assets.topics.png
+border-radius.px: 20
+margin.px: 10
+width.fixed.px: 330
+height.fixed.px: 148
+
+
+-- ftd.row:
+-- ftd.text: Easily generate videos on wide range of subjects and topics from Finance to Engineering.
+width.fixed.px: 348
+height.fixed.px: 148
+margin-vertical.px: 180
+-- end: ftd.row
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- end: ftd.row
+
+;; -- ftd.text: Photo booth fam kinfolk cold-pressed sriracha leggings jianbing microdosing tousled
+;; -- end: ftd.text
+
+;; -- ws.hero-image-right: Engage
+;; image: $assets.files.assets.right-img.jpg
+
+;; Welcome Studio gives you all the tools you need to create and host virtual
+;; experiences that look awesome and put your brand centerstage.
+
+;; -- ws.hero-image-left: Analyze
+;; image: $assets.files.assets.left-img2.jpg
+
+;; Welcome Studio gives you all the tools you need to create and host virtual
+;; experiences that look awesome and put your brand centerstage.
+
+;; -- ws.hero-with-image: Experiences
+;; image: $assets.files.assets.landing.png
+;; align-right: true
+
+;; Lorem ipsum dolor sit amet
+
+;; -- ws.banner-card: SEE HOW MUCH FASTER YOU CAN GET PAID WITH FASTN
+;; info-cards: $common.list-of-info-cards
+
+;; Use our calculator to see how many days we can free up in cash flow for your
+;; business.
+
+;; -- ws.testimonials-card:
+;; testimonials: $common.list-of-testimonials
+;; nav: $common.navs
+
+;; -- ws.features-card: We Transform ideas into digital outcomes
+;; features: $common.list-of-features
+;; tag: KICKER
+;; id: services
+
+;; We are an award-winning strategic design company that provides consultancy
+;; services and help you create outstanding digital products.
+
+;; -- ws.faqs: Frequently Asked Questions
+;; faqs-list: $common.list-of-faqs
+
+;; Flex is the only saas business platform that lets you run your business on one
+;; platform, seamlessly across all digital channels.
+
+;; -- ws.logo-cloud: Trusted by the top companies in this industry
+;; logo-list: $common.list-of-logos
+;; id: clients
+
+;; The only SaaS business platform that combines CRM, marketing automation &
+;; commerce.
+
+
+-- pricing.pricing: Our payment services worldwide
+
+We believe in recognizing the value of your expertise 
+and the importance of your contributions. With our transparent 
+and competitive payment structure, we ensure that your efforts are 
+not only acknowledged but also rewarded appropriately.
+
+
+-- pricing.pricing-card: Basic Plan
+active: false 
+price: 100
+currency: Rs.
+subscription: monthly
+feature-list: $pricing.free-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: Welcome
+
+You Get
+
+-- pricing.pricing-card: Standard Plan
+active: true 
+price: 190
+currency: Rs.
+subscription: monthly
+feature-list: $pricing.startup-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: Welcome
+tag: Best Plan
+
+You Get
+-- pricing.pricing-card: Premium Plan
+active: false 
+price: 350
+currency: Rs.
+subscription: monthly
+feature-list: $pricing.enterprise-feature-list
+cta-text: Get Started
+cta-link: /pricing/
+body-title: Welcome
+
+You Get
+
+-- end: pricing.pricing
+
+
+-- ws.row-container:
+
+-- ws.contact-form: Contact Us
+company: PipMyScript.co
+address: Block No. 512, Kahmere Line, Bangalore, Bengaluru - 886600
+email: $assets.files.assets.connect-with.svg
+phone: +91 9999999999, +91 8888888888
+cta-button: Contact Us
+cta-link: contact/
+twitter: $assets.files.assets.twitter.svg
+linkedin: $assets.files.assets.instagram.svg
+instagram: $assets.files.assets.linkedin.svg
+twitter-link: https://twitter.com
+instagram-link: https://instagram.com
+linkedin-link: https://www.linkedin.com
+
+-- ws.iframe:
+src: https://maps.google.com/maps?width=1000&amp;height=420&amp;hl=en&amp;q=91springboard-bannerghatta-road&amp;t=&amp;z=11&amp;ie=UTF8&amp;iwloc=B&amp;output=embed
+width.fixed.px: 1040
+height.fixed.px: 420
+
+-- end: ws.row-container
+
+-- end: ws.page

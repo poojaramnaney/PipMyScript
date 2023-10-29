@@ -1,0 +1,35 @@
+-- import: acme.fastn.com/blog-meta/patrica
+
+-- common.post-meta meta: Acme launches in new cities
+post-image: $assets.files.assets.post2.png
+author: $patrica.patrica
+post-url: /sample-post/
+published-on: 10th Sept 2022
+
+Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium 
+doloremque laudantium, rem aperiam, eaque ipsa quae ab illo inventore 
+
+-- common.post-meta meta1: New product launch event
+post-image: $assets.files.assets.featured.png
+image: $assets.files.assets.avatar.png
+author: $patrica.patrica
+post-url: /sample-post/
+published-on: 15th Sept 2022
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta2: We Transform ideas into digital outcomes.
+post-image: $assets.files.assets.post2.png
+image: $assets.files.assets.avatar.png
+author: $patrica.patrica
+post-url: /sample-post/
+published-on: 18th Sept 2022
+
+Mauris ullamcorper tortor sed purus interdum, fermentum efficitur est dictu.
+
+-- common.post-meta meta3: Bringing the world together through live experiences.
+post-image: $assets.files.assets.post1.png
+image: $assets.files.assets.avatar.png
+author: $patrica.patrica
+post-url: /sample-post/
+published-on: 2nd Jan 2023

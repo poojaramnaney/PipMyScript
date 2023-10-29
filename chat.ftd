@@ -1,0 +1,62 @@
+
+-- import: theme/team
+-- import: fastn-community.github.io/button
+-- ws.page:
+-- ftd.row:
+padding-top.px: 64
+margin-right.px: -100
+
+
+-- team.team: Clear your concepts with illustrative videos
+tag: WELCOME 
+
+-- team.team.body:
+
+
+Clear your concepts with illustrative videos. Our video tutorials break down complex topics into simple, engaging visuals that make learning a breeze.
+
+
+-- end: team.team
+
+
+-- ftd.column:
+-- ftd.text-input:
+margin.px: 74
+placeholder: Type any text ...
+padding-horizontal.px: 16
+padding-vertical.px: 8
+width.fixed.px: 1000
+height.fixed.px: 50
+border-width.px: 5
+border-color: coral
+border-radius.px: 20
+max-length: 100
+;; -- on-input: $ftd.set-string($a = $current-value, v = $VALUE)
+;; -- end: on-input
+;;$on-input$: $ftd.set-string($a = $current-value, v = $VALUE)
+
+
+-- end: ftd.text-input
+;; -- ftd.text: $current-value
+;; id: username
+;; color: coral
+;; padding.px: 10
+;; -- end: ftd.text
+
+-- ftd.row:
+align-content: center
+;; padding-horizontal.px: 80 
+padding-vertical.px: 8
+margin-left.px: 500
+width.fixed.px: 100
+height.fixed.px: 50
+-- button.button: Get Video
+role: primary
+extra-large: true
+link: chat
+-- end:ftd.row
+
+-- end: ftd.column
+-- end: ftd.row
+-- end: ws.page
+;; -- string $current-value: Nothing typed yet

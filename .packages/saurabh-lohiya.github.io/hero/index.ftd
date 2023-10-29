@@ -1,0 +1,1122 @@
+-- integer max-width: 1180
+
+-- boolean $show-modal: false
+
+
+
+
+-- site-doc.doc-home: Hero
+current-package: saurabh-lohiya.github.io/hero
+show-tabs: false
+site-title: Hero
+github-url: https://github.com/saurabh-lohiya/hero
+
+-- site-doc.output:
+colors: $ftd.default-colors
+
+-- ds.hero-right-hug: We Transform ideas into digital outcomes.
+image: $assets.files.assets.hero-img.jpg
+primary-cta: Button
+secondary-cta: Button
+
+We are an award-winning strategic design company that provides 
+consultancy services and help you create outstanding digital products.
+
+-- site-doc.header: What is a Hero component ?
+
+Hero components refer to a component where you can add all types of featured that you provide.
+
+-- site-doc.header: How to use Hero ?
+
+To use Hero components on your [fastn](https://fastn.com/) web project, add below into `FASTN.ftd`
+file:
+
+-- cb.code:
+lang: ftd
+
+\-- fastn.dependency: saurabh-lohiya.github.io/hero
+
+-- end: site-doc.output
+
+-- end: site-doc.doc-home
+
+
+
+
+
+
+
+-- component hero-right-hug:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html 
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string secondary-cta:
+string secondary-cta-link: index.html 
+ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 42.5
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 15
+align-self: center
+
+-- ftd.text: $hero-right-hug.title
+if: { hero-right-hug.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+
+-- ftd.text:
+if: { hero-right-hug.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+
+$hero-right-hug.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- primary-button: $hero-right-hug.primary-cta
+if: { hero-right-hug.primary-cta != NULL }
+cta-link: $hero-right-hug.primary-cta-link
+src: $hero-right-hug.primary-cta-icon
+
+-- secondary-button: $hero-right-hug.secondary-cta
+if: { hero-right-hug.secondary-cta != NULL }
+cta-link: $hero-right-hug.secondary-cta-link
+src: $hero-right-hug.secondary-cta-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 480
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-large:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string secondary-cta:
+string secondary-cta-link: index.html
+ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 42.5
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+spacing.fixed.px: 15
+align-self: center
+
+-- ftd.text: $hero-right-hug-large.title
+if: { hero-right-hug-large.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+
+-- ftd.text:
+if: { hero-right-hug-large.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+
+$hero-right-hug-large.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- primary-button: $hero-right-hug-large.primary-cta
+if: { hero-right-hug-large.primary-cta != NULL }
+cta-link: $hero-right-hug-large.primary-cta-link
+src: $hero-right-hug-large.primary-cta-icon
+
+-- secondary-button: $hero-right-hug-large.secondary-cta
+if: { hero-right-hug-large.secondary-cta != NULL }
+cta-link: $hero-right-hug-large.secondary-cta-link
+src: $hero-right-hug-large.secondary-cta-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 400
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug-large.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-large
+
+
+
+
+
+
+
+
+
+
+-- component hero-left-hug-expanded:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string secondary-cta:
+string secondary-cta-link: index.html
+ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+optional string input-label:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 540
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+src: $hero-left-hug-expanded.image
+width: fill-container
+height: fill-container
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-content: center
+align-self: center
+
+-- ftd.column:
+width.fixed.percent: 65
+color: $inherited.colors.text
+
+-- ftd.text: $hero-left-hug-expanded.title
+if: { hero-left-hug-expanded.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-left-hug-expanded.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-left-hug-expanded.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 25
+
+-- primary-button: $hero-left-hug-expanded.primary-cta
+if: { hero-left-hug-expanded.primary-cta != NULL }
+cta-link: $hero-left-hug-expanded.primary-cta-link
+src: $hero-left-hug-expanded.primary-cta-icon
+
+-- secondary-button: $hero-left-hug-expanded.secondary-cta
+if: { hero-left-hug-expanded.secondary-cta != NULL }
+cta-link: $hero-left-hug-expanded.secondary-cta-link
+src: $hero-left-hug-expanded.secondary-cta-icon
+
+-- end: ftd.row
+
+-- ftd.text: $hero-left-hug-expanded.input-label
+if: { hero-left-hug-expanded.input-label != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-small
+margin-top.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-left-hug-expanded
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-search:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html 
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string input-label: Label
+optional string input-placeholder:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 42.5
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+align-self: center
+
+-- ftd.text: $hero-right-hug-search.title
+if: { hero-right-hug-search.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-right-hug-search.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-right-hug-search.body
+
+-- ftd.text: $hero-right-hug-search.input-label
+if: { hero-right-hug-search.input-label != NULL }
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+align-content: center
+
+-- ftd.column:
+if: { hero-right-hug-search.input-placeholder != NULL }
+
+-- search-bar: $hero-right-hug-search.input-placeholder
+
+-- end: ftd.column
+
+-- primary-button: $hero-right-hug-search.primary-cta
+if: { hero-right-hug-search.primary-cta != NULL }
+cta-link: $hero-right-hug-search.primary-cta-link
+src: $hero-right-hug-search.primary-cta-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 480
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug-search.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-search
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-search-label:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string error-message:
+optional string input-label:
+optional string input-placeholder:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+max-width.fixed.px: $max-width
+height: fill-container
+wrap: true
+spacing: space-between
+
+-- ftd.column:
+width.fixed.percent: 42.5
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text
+align-self: center
+
+-- ftd.text: $hero-right-hug-search-label.title
+if: { hero-right-hug-search-label.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-right-hug-search-label.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-right-hug-search-label.body
+
+-- ftd.text: $hero-right-hug-search-label.error-message
+if: { hero-right-hug-search-label.error-message != NULL }
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+align-content: center
+
+-- ftd.column:
+if: { hero-right-hug-search-label.input-placeholder != NULL }
+
+-- search-bar: $hero-right-hug-search-label.input-placeholder
+
+-- end: ftd.column
+
+-- primary-button: $hero-right-hug-search-label.primary-cta
+if: { hero-right-hug-search-label.primary-cta != NULL }
+cta-link: $hero-right-hug-search-label.primary-cta-link
+src: $hero-right-hug-search-label.primary-cta-icon
+
+-- end: ftd.row
+
+-- ftd.text: $hero-right-hug-search-label.input-label
+if: { hero-right-hug-search-label.input-label != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-small
+margin-top.px: 10
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 480
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug-search-label.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-search-label
+
+
+
+
+
+
+
+
+
+
+-- component hero-bottom-hug:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string secondary-cta:
+string secondary-cta-link: index.html
+ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width 
+color: $inherited.colors.text
+align-content: center
+
+-- ftd.text: $hero-bottom-hug.title
+if: { hero-bottom-hug.title != NULL }
+role: $inherited.types.heading-hero
+max-width.fixed.percent: 60
+text-align: center
+style: bold
+
+-- ftd.text:
+if: { hero-bottom-hug.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 60
+text-align: center
+margin-top.px: 15
+
+$hero-bottom-hug.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 25
+
+-- primary-button: $hero-bottom-hug.primary-cta
+if: { hero-bottom-hug.primary-cta != NULL }
+cta-link: $hero-bottom-hug.primary-cta-link
+src: $hero-bottom-hug.primary-cta-icon
+
+-- secondary-button: $hero-bottom-hug.secondary-cta
+if: { hero-bottom-hug.secondary-cta != NULL }
+cta-link: $hero-bottom-hug.secondary-cta-link
+src: $hero-bottom-hug.secondary-cta-icon
+
+-- end: ftd.row
+
+-- ftd.image:
+width: fill-container
+height.fixed.px: 680
+src: $hero-bottom-hug.image
+margin-top.px: 30
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-bottom-hug
+
+
+
+
+
+
+
+
+
+
+-- component hero-bottom-hug-search:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string error-message:
+optional string input-placeholder:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 100
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: $max-width 
+color: $inherited.colors.text
+align-content: center
+
+-- ftd.text: $hero-bottom-hug-search.title
+if: { hero-bottom-hug-search.title != NULL }
+role: $inherited.types.heading-hero
+max-width.fixed.percent: 60
+text-align: center
+style: bold
+
+-- ftd.text:
+if: { hero-bottom-hug-search.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 60
+text-align: center
+margin-top.px: 15
+
+$hero-bottom-hug-search.body
+
+-- ftd.text: $hero-bottom-hug-search.error-message
+if: { hero-bottom-hug-search.error-message != NULL }
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- ftd.column:
+if: { hero-bottom-hug-search.input-placeholder != NULL }
+
+-- search-bar: $hero-bottom-hug-search.input-placeholder
+
+-- end: ftd.column
+
+-- primary-button: $hero-bottom-hug-search.primary-cta
+if: { hero-bottom-hug-search.primary-cta != NULL }
+cta-link: $hero-bottom-hug-search.primary-cta-link
+src: $hero-bottom-hug-search.primary-cta-icon
+
+-- end: ftd.row
+
+-- ftd.image:
+width: fill-container
+height.fixed.px: 680
+src: $hero-bottom-hug-search.image
+margin-top.px: 30
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: hero-bottom-hug-search
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-expanded-search:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string error-message:
+optional string input-placeholder:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-content: center
+align-self: center
+
+-- ftd.column:
+width.fixed.percent: 65
+color: $inherited.colors.text
+
+-- ftd.text: $hero-right-hug-expanded-search.title
+if: { hero-right-hug-expanded-search.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-right-hug-expanded-search.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-right-hug-expanded-search.body
+
+-- ftd.text: $hero-right-hug-expanded-search.error-message
+if: { hero-right-hug-expanded-search.error-message != NULL }
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+
+-- ftd.column:
+if: { hero-right-hug-expanded-search.input-placeholder != NULL }
+
+-- search-bar: $hero-right-hug-expanded-search.input-placeholder
+
+-- end: ftd.column
+
+-- primary-button: $hero-right-hug-expanded-search.primary-cta
+if: { hero-right-hug-expanded-search.primary-cta != NULL }
+cta-link: $hero-right-hug-expanded-search.primary-cta-link
+src: $hero-right-hug-expanded-search.primary-cta-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 540
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug-expanded-search.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-expanded-search
+
+
+
+
+
+
+
+
+
+
+-- component hero-left-hug-expanded-search:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html 
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string error-message: Small Headline
+optional string input-placeholder: input-label
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 540
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-left-hug-expanded-search.image
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-content: center
+align-self: center
+
+-- ftd.column:
+width.fixed.percent: 65
+color: $inherited.colors.text
+
+-- ftd.text: $hero-left-hug-expanded-search.title
+if: { hero-left-hug-expanded-search.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-left-hug-expanded-search.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-left-hug-expanded-search.body
+
+-- ftd.text: $hero-left-hug-expanded-search.error-message
+if: { hero-left-hug-expanded-search.error-message != NULL }
+color: $inherited.colors.text
+role: $inherited.types.copy-small
+margin-top.px: 15
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 10
+align-content: center
+
+-- ftd.column:
+if: { hero-left-hug-expanded-search.input-placeholder != NULL }
+
+-- search-bar: $hero-left-hug-expanded-search.input-placeholder
+
+-- end: ftd.column
+
+-- primary-button: $hero-left-hug-expanded-search.primary-cta
+if: { hero-left-hug-expanded-search.primary-cta != NULL }
+cta-link: $hero-left-hug-expanded-search.primary-cta-link
+src: $hero-left-hug-expanded-search.primary-cta-icon
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-left-hug-expanded-search
+
+
+
+
+
+
+
+
+
+
+-- component primary-button:
+caption title:
+string cta-link:
+ftd.image-src src:
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+background.solid: $inherited.colors.cta-primary.base
+background.solid if { primary-button.cta-hover }: $inherited.colors.cta-primary.hover
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $primary-button.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $primary-button.cta-hover, v = false)
+link: $primary-button.cta-link
+border-width.px: 2
+border-color: $inherited.colors.border
+border-color if { primary-button.cta-hover }: $inherited.colors.text-strong
+border-radius.px: 6
+spacing.fixed.px: 12
+
+-- ftd.text: $primary-button.title
+color: $inherited.colors.cta-primary.text
+role: $inherited.types.button-medium
+
+-- ftd.image:
+src: $primary-button.src
+height.fixed.px: 14
+width.fixed.px: 14
+
+-- end: ftd.row
+
+-- end: primary-button
+
+
+
+
+
+
+
+
+
+
+-- component secondary-button:
+caption title:
+string cta-link:
+ftd.image-src src:
+boolean $cta-hover: false
+
+-- ftd.row:
+padding-vertical.px: 8
+padding-horizontal.px: 20
+background.solid: $inherited.colors.cta-secondary.base
+background.solid if { secondary-button.cta-hover }: $inherited.colors.cta-secondary.hover
+align-content: center
+$on-mouse-enter$: $ftd.set-bool($a = $secondary-button.cta-hover, v = true)
+$on-mouse-leave$: $ftd.set-bool($a = $secondary-button.cta-hover, v = false)
+link: $secondary-button.cta-link
+border-width.px: 2
+border-color: $inherited.colors.border
+border-color if { secondary-button.cta-hover }: $inherited.colors.text-strong
+border-radius.px: 6
+spacing.fixed.px: 12
+
+-- ftd.text: $secondary-button.title
+color: $inherited.colors.cta-secondary.text
+role: $inherited.types.button-medium
+
+-- ftd.image:
+src: $secondary-button.src
+height.fixed.px: 14
+width.fixed.px: 14
+
+-- end: ftd.row
+
+-- end: secondary-button
+
+
+
+
+
+
+
+
+
+-- component search-bar:
+caption title:
+
+-- ftd.row:
+
+-- ftd.text-input:
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+placeholder: $search-bar.title
+padding-vertical.px: 10
+padding-horizontal.px: 8
+border-width.px: 1
+border-radius.px: 5
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.image:
+anchor: parent
+src: $assets.files.assets.search.svg
+height.fixed.px: 18
+width.fixed.px: 18
+right.px: 15
+top.px: 12
+
+-- end: ftd.row
+
+-- end: search-bar
+
+
+
+
+
+
+
+
+
+
+-- component hero-right-hug-expanded:
+optional caption title:
+optional body body:
+ftd.image-src image:
+optional string primary-cta:
+string primary-cta-link: index.html
+ftd.image-src primary-cta-icon: $assets.files.assets.check-solid.svg
+optional string secondary-cta:
+string secondary-cta-link: index.html
+ftd.image-src secondary-cta-icon: $assets.files.assets.check-solid.svg
+optional string input-label:
+
+-- ftd.row:
+width: fill-container
+align-content: center
+height: fill-container
+padding-horizontal.px if { ftd.device == "mobile" }: 20
+padding-vertical.px: 49
+
+-- ftd.row:
+width: fill-container
+height: fill-container
+wrap: true
+
+-- ftd.column:
+width.fixed.percent: 50
+width if { ftd.device == "mobile" }: fill-container
+align-content: center
+align-self: center
+
+-- ftd.column:
+width.fixed.percent: 65
+color: $inherited.colors.text
+
+-- ftd.text: $hero-right-hug-expanded.title
+if: { hero-right-hug-expanded.title != NULL }
+role: $inherited.types.heading-hero
+style: bold
+margin-top.px: 15
+
+-- ftd.text:
+if: { hero-right-hug-expanded.body != NULL }
+role: $inherited.types.copy-regular
+max-width.fixed.percent: 90
+margin-top.px: 15
+
+$hero-right-hug-expanded.body
+
+-- ftd.row:
+spacing.fixed.px: 12
+margin-top.px: 25
+
+-- primary-button: $hero-right-hug-expanded.primary-cta
+if: { hero-right-hug-expanded.primary-cta != NULL }
+cta-link: $hero-right-hug-expanded.primary-cta-link
+src: $hero-right-hug-expanded.primary-cta-icon
+
+-- secondary-button: $hero-right-hug-expanded.secondary-cta
+if: { hero-right-hug-expanded.secondary-cta != NULL }
+cta-link: $hero-right-hug-expanded.secondary-cta-link
+src: $hero-right-hug-expanded.secondary-cta-icon
+
+-- end: ftd.row
+
+-- ftd.text: $hero-right-hug-expanded.input-label
+if: { hero-right-hug-expanded.input-label != NULL }
+color: $inherited.colors.text
+role: $inherited.types.label-small
+margin-top.px: 10
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+
+-- ftd.column:
+width.fixed.percent: 50
+height.fixed.px: 540
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+margin-vertical.px if { ftd.device == "mobile" }: 30
+
+-- ftd.image:
+width: fill-container
+height: fill-container
+src: $hero-right-hug-expanded.image
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.row
+
+-- end: hero-right-hug-expanded

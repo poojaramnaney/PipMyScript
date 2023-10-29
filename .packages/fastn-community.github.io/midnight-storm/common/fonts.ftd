@@ -1,0 +1,95 @@
+-- import: fastn-community.github.io/inter-font/assets as inter-font-assets
+
+-- import: fastn-community.github.io/playfair-display-font/assets as playfair-display-font-assets
+
+-- import: fastn-community.github.io/poppins-font/assets as poppins-font-assets
+
+-- ftd.type button-small-mobile:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+weight: 400
+font-family: $poppins-font-assets.fonts.Poppins
+
+-- ftd.type button-small-desktop:
+line-height.px: 19
+size.px: 14
+letter-spacing.px: 0
+font-family: $poppins-font-assets.fonts.Poppins
+weight: 400
+
+-- ftd.responsive-type button-small:
+desktop: $button-small-desktop
+mobile: $button-small-mobile
+
+-- ftd.type button-large-mobile:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+weight: 700
+font-family: $poppins-font-assets.fonts.Poppins
+
+-- ftd.type button-large-desktop:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+font-family: $poppins-font-assets.fonts.Poppins
+weight: 700
+
+-- ftd.responsive-type button-large:
+desktop: $button-large-desktop
+mobile: $button-large-mobile
+
+-- ftd.type copy-regular-mobile:
+line-height.px: 30
+size.px: 18
+letter-spacing.px: 0
+weight: 700
+font-family: $inter-font-assets.fonts.Inter
+
+-- ftd.type copy-regular-desktop:
+line-height.px: 30
+size.px: 18
+letter-spacing.px: 0
+font-family: $inter-font-assets.fonts.Inter
+weight: 700
+
+-- ftd.responsive-type copy-regular:
+desktop: $copy-regular-desktop
+mobile: $copy-regular-mobile
+
+-- ftd.type copy-large-mobile:
+line-height.px: 26
+size.px: 20
+letter-spacing.px: 0
+weight: 700
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+
+-- ftd.type copy-large-desktop:
+line-height.px: 26
+size.px: 20
+letter-spacing.px: 0
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+weight: 700
+
+-- ftd.responsive-type copy-large:
+desktop: $copy-large-desktop
+mobile: $copy-large-mobile
+
+-- ftd.type button-medium-mobile:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+weight: 400
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+
+-- ftd.type button-medium-desktop:
+line-height.px: 21
+size.px: 16
+letter-spacing.px: 0
+font-family: $playfair-display-font-assets.fonts.Playfair-Display
+weight: 400
+
+-- ftd.responsive-type button-medium:
+desktop: $button-medium-desktop
+mobile: $button-medium-mobile
